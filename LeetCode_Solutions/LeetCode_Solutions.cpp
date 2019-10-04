@@ -1,7 +1,10 @@
 #include <iostream>
+#include "LinkedList.cpp"
 
 int main()
 {
-    std::cout << "Hello World!\n"; 
+	// Find the middle element in a Linked List with one pass
+	LinkedList<int> a;
+	a.insert(1);
 }
 
