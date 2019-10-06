@@ -1,7 +1,9 @@
+#pragma once
+
 #include <iostream>
 #include <vector>
 #include "GetMiddleElement.cpp"
-#include "IsHappyNumber.cpp"
+#include "IsHappyNumber.h"
 
 using namespace std;
 
@@ -11,6 +13,10 @@ int main()
 	vector<int> a;
 	a.push_back(1);
 
-	cout << isHappyNumber(7) << endl;
+	cout << isHappyNumber(1) << endl; // True
+	cout << isHappyNumber(3) << endl; // False
+	cout << isHappyNumber(5) << endl; // False
+	cout << isHappyNumber(7) << endl; // True
+	cout << isHappyNumber(10) << endl; // True
 }
 
