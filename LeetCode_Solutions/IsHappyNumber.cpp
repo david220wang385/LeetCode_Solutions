@@ -13,3 +13,20 @@ isHappyNumber(7) is true
 1^2 + 3^2 + 0^2 = 10
 1^2 + 0^2 = 1
 */
+
+#include <unordered_map>
+
+using namespace std;
+
+bool isHappyNumber(int n) {
+	int num = n;
+	int result = 0;
+	unordered_map<int, int> prev_vals;
+
+	while (result != 1) {
+		while (num > 0) {
+			result += pow((num % 10), 2);
+			num /= 10;
+		}
+	}
+}
