@@ -1,10 +1,13 @@
 #include <iostream>
-#include "LinkedList.cpp"
+#include <vector>
+#include "GetMiddleElement.cpp"
+
+using namespace std;
 
 int main()
 {
 	// Find the middle element in a Linked List with one pass
-	LinkedList<int> a;
-	a.insert(1);
+	vector<int> a;
+	a.push_back(1);
 }
 
